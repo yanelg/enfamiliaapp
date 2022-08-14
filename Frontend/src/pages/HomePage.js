@@ -36,6 +36,7 @@ const HomePage = (props) => {
     }
 
     return (
+        
         <div><h2>Bienvenidos</h2>
             <p>Contamos par su mejor atención con:</p>
             <p>Más de 108 camas de internación general con baño privado,</p>
