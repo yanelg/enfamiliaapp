@@ -1,42 +1,13 @@
-import '../style/HomePage.css';
-import Carousel from 'react-bootstrap/Carousel';
+import '../style/HomePage.css'
 /*import '../../imagenes/home/ambulancia.jpg'
 import '../../imagenes/home/clinica.jpg'
 import '../../imagenes/home/logo.jpg'*/
-
+import Carrousel from '../components/layout/Carrousel'
 const HomePage = (props) => {
-    function UncontrolledExample() {
-        return (
-            <Carousel>
-                <Carousel.Item>
-                    <img src="imagenes/home/ambulancia.jpg" alt="ambulancia"></img>
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img src="imagenes/home/clinica.jpg" alt="ambulancia"></img>
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img src="imagenes/home/logo.jpg" alt="ambulancia"></img>
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        );
-    }
+
 
     return (
-        
+        <><Carrousel />
         <div><h2>Bienvenidos</h2>
             <p>Contamos par su mejor atención con:</p>
             <p>Más de 108 camas de internación general con baño privado,</p>
@@ -104,7 +75,7 @@ const HomePage = (props) => {
                 seguridad, se efectúen de manera óptima.</p>
             <p>Ética Profesional: actuar siempre en congruencia con los valores humanos y principios morales más
                 estrictos.
-            </p></div>
+            </p></div></>
     );
 }
 
