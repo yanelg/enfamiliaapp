@@ -37,6 +37,7 @@ app.use(session({
 }));
 
 secured = async (req, res, next) => {
+ 
   try {
     console.log(req.session.id_usuario);
     if (req.session.id_usuario) {
@@ -44,6 +45,8 @@ secured = async (req, res, next) => {
     } else {
       res.redirect('/admin/login');
     } // cierro catch error
+  }catch{
+    res.redirect('/admin/login');
   } // cierro secured
 }
 
