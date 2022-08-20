@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import StaffPage from './pages/StaffPage';
 import GaleriaPage from './pages/GaleriaPage';
 import ContactoPage from './pages/ContactoPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
