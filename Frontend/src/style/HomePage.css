@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.equipamiento {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    align-items: center; 
+}
+
 .footer {
     background-color: rgb(239, 234, 227);
     clear: both;

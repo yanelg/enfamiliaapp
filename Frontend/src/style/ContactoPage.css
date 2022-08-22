@@ -1,5 +1,6 @@
 .formulario p label {
     background-color: rgb(198, 197, 197);
+    text-transform: uppercase;
 }
 
 .formulario textarea {
