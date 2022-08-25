@@ -15,6 +15,7 @@ var usersRouter = require('./routes/users');
 //Creamos los controladores
 var loginRouter=require('./routes/admin/login'); //login.js
 var adminRouter = require('./routes/admin/novedades'); //novedades.js
+const pool = require('./models/bd');
 
 var app = express();
 
@@ -81,10 +82,13 @@ app.use('/admin/novedades',adminRouter);
 
 app.use('/users', usersRouter);
 app.use('/', indexRouter);
-app.use('/users',usersRouter);
+
 // declaramos el modo de uso de los controladores
 app.use('/admin/login',loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
+
+pool.query('select * from enfamilia').then(function(resultados){console.log(resultados)
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
